@@ -21,7 +21,7 @@ export const NavWrapper = styled.nav<NavigationWrapperProps>`
   @media (max-width: 580px) {
     transform: ${({ mobile }) =>
       mobile ? 'translateX(0)' : 'translateX(-300px)'};
-    justify-content: flex-end;
+    justify-content: space-evenly;
     position: fixed;
     top: 0;
     left: 0;
