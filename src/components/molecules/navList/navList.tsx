@@ -22,7 +22,7 @@ const NavList: FC<NavListProps> = ({ refNav }) => {
             <Text
               content={item}
               key={item}
-              fontSize={window.innerHeight < 600 ? 'XS' : 'S'}
+              fontSize={window.innerHeight < 800 ? 'XS' : 'S'}
               fontWeight={'S'}
               margin={0}
               pointer={true}
