@@ -16,12 +16,12 @@ export const NavWrapper = styled.nav<NavigationWrapperProps>`
   border-right: 2px solid black;
   transition: width 1s ease-in;
   @media (max-width: 1440px) {
-    justify-content: flex-end;
+    justify-content: center;
   }
   @media (max-width: 580px) {
     transform: ${({ mobile }) =>
       mobile ? 'translateX(0)' : 'translateX(-300px)'};
-    justify-content: flex-start;
+    justify-content: flex-end;
     position: fixed;
     top: 0;
     left: 0;
