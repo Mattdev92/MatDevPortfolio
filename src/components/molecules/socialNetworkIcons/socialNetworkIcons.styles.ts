@@ -24,9 +24,9 @@ export const Wrapper = styled.div<WrapperProps>`
     grid-column: 4 / 11;
   }
   @media (max-width: 580px) {
-    margin: 0;
-    top: 0;
-    width: 100%;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
   }
 `;
 

@@ -58,13 +58,16 @@ export const Description = styled.a<DescriptionProps>`
   background: ${({ theme }) => theme.colors.content};
   z-index: 2;
   position: absolute;
-  bottom: 0;
-  height: 250px;
-  width: ${({ show }) => (show ? '400px' : 0)};
-  transition: all 1s ease-in-out;
+  top: 150px;
+  left: 0;
+  height: ${({ show }) => (show ? '250px' : 0)};
+  width: 400px;
+  transition: all 1s ease;
+
   @media (max-width: 580px) {
-    width: ${({ show }) => (show ? '300px' : 0)};
+    top: 0;
+    width: 300px;
     font-size: ${({ theme }) => theme.fontSize.XS};
-    height: 300px;
+    height: ${({ show }) => (show ? '300px' : 0)};
   }
 `;

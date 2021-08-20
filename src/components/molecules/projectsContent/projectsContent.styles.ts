@@ -10,6 +10,9 @@ export const ContentWrapper = styled.div`
   gap: 10px;
   justify-content: center;
   @media (max-width: 580px) {
+    position: absolute;
+    top: 80px;
+    margin: auto;
     grid-column: 1 / 11;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   }
