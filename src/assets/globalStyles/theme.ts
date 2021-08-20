@@ -33,7 +33,7 @@ export const theme: StyleClosetTheme = {
   colors: {
     // main: 'rgb(41,42,44)',
     main: 'rgba(255, 211, 80, 0.7)',
-    mobile: 'rgba(255, 211, 80, 0.9)',
+    mobile: 'rgba(255, 211, 80, 1)',
     content: '#F8FBFF',
     helper: '#4caf50',
   },

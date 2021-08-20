@@ -15,6 +15,11 @@ export const Wrapper = styled.div`
     justify-content: center;
     align-items: center;
   }
+  @media (max-width: 580px) {
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+    align-items: center;
+  }
 `;
 
 export const StyledImage = styled.img`
