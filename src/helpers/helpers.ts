@@ -7,6 +7,11 @@ import { ReactComponent as CssIcon } from 'assets/techIcons/css.svg';
 import { ReactComponent as TypescriptIcon } from 'assets/techIcons/typescript.svg';
 import { ReactComponent as SassIcon } from 'assets/techIcons/sass.svg';
 import { ReactComponent as ReactIcon } from 'assets/techIcons/React.svg';
+import { ReactComponent as AboutIcon } from 'assets/navIcons/about.svg';
+import { ReactComponent as ContactIcon } from 'assets/navIcons/contact.svg';
+import { ReactComponent as CVIcon } from 'assets/navIcons/cv.svg';
+import { ReactComponent as ProjectIcon } from 'assets/navIcons/project.svg';
+import { ReactComponent as SkillIcon } from 'assets/navIcons/skill.svg';
 
 import ItSpa from 'assets/projects/ItSpa.png';
 import MemoryGame from 'assets/projects/MemoryGame.png';
@@ -35,6 +40,13 @@ export const phoneNumber = [
 export const Navdata = ['O MNIE', 'PROJEKTY', 'UMIEJĘTNOŚCI', 'KONTAKT', 'CV'];
 export const Url = ['/about', '/projects', '/skills', '/contact', '/CV'];
 
+export const NavIcons = [
+  AboutIcon,
+  ProjectIcon,
+  SkillIcon,
+  ContactIcon,
+  CVIcon,
+];
 // Social Network data
 export const SocialNetworkIcon = [Face, Github, Linkedin];
 

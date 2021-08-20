@@ -8,4 +8,6 @@ export const SvgContainer = styled.div<IconProps>`
   display: flex;
   align-items: center;
   justify-content: center;
+  max-height: 100%;
+  object-fit: contain;
 `;

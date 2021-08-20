@@ -59,12 +59,12 @@ export const Description = styled.a<DescriptionProps>`
   z-index: 2;
   position: absolute;
   bottom: 0;
-  height: ${({ show }) => (show ? '250px' : 0)};
-  width: 400px;
+  height: 250px;
+  width: ${({ show }) => (show ? '400px' : 0)};
   transition: all 1s ease-in-out;
   @media (max-width: 580px) {
-    width: 300px;
+    width: ${({ show }) => (show ? '300px' : 0)};
     font-size: ${({ theme }) => theme.fontSize.XS};
-    height: ${({ show }) => (show ? '300px' : 0)};
+    height: 300px;
   }
 `;

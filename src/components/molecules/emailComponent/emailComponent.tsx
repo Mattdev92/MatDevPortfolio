@@ -3,6 +3,8 @@ import Text from 'components/atoms/text/text';
 import { Wrapper } from './emailComponent.styles';
 import { EmailProps } from './emailComponent.types';
 import AppContext from 'context';
+import SvgIcon from 'components/atoms/svgIcon/svgIcon';
+import { ReactComponent as ContactIcon } from 'assets/navIcons/contact.svg';
 
 const EmailComponent: FC<EmailProps> = ({ refEmail }) => {
   const {
@@ -11,6 +13,7 @@ const EmailComponent: FC<EmailProps> = ({ refEmail }) => {
 
   return (
     <Wrapper ref={refEmail}>
+      <SvgIcon Icon={ContactIcon} height={45} width={45} />
       <Text
         content={'mateuszgrzejszczyk1@gmail.com'}
         fontWeight={'M'}
