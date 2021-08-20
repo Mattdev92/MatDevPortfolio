@@ -6,7 +6,7 @@ const SvgIcon: FC<SvgIconProps> = (props) => {
   const { Icon } = props;
   return (
     <SvgContainer {...props}>
-      <Icon />
+      <Icon style={{ maxHeight: '100%', maxWidth: '100%' }} />
     </SvgContainer>
   );
 };
