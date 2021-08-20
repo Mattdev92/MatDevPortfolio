@@ -4,7 +4,7 @@ export const Wrapper = styled.div`
   display: inline-flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   grid-column: 5/10;
   grid-row: 3/4;
   border: none;

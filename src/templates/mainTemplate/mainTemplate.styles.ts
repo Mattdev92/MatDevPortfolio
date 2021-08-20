@@ -17,8 +17,8 @@ export const MainWrapper = styled.main`
   }
   @media (max-width: 580px) {
     display: flex;
-    align-items: flex-start;
-    justify-content: space-evenly;
+    align-items: center;
+    justify-content: flex-start;
     flex-direction: column-reverse;
   }
 `;

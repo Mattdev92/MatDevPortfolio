@@ -17,6 +17,7 @@ const SocialNetworkIcons: FC = () => {
       },
       true
     );
+    return () => document.removeEventListener('scroll', () => {});
   }, []);
 
   return (
