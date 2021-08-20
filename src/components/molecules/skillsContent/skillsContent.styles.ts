@@ -7,4 +7,9 @@ export const ContentWrapper = styled.div`
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   grid-auto-rows: auto;
+  @media (max-width: 580px) {
+    position: absolute;
+    top: 80px;
+    margin: auto;
+  }
 `;

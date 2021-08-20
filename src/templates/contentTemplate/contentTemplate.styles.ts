@@ -14,4 +14,7 @@ export const ContentWrapper = styled.div`
   @media (max-width: 1000px) {
     margin: 0px;
   }
+  @media (max-width: 580px) {
+    padding: 20px;
+  }
 `;
