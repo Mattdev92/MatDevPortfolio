@@ -16,6 +16,6 @@ export const ContentWrapper = styled.section`
     width: 100%;
     align-items: center;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
   }
 `;
