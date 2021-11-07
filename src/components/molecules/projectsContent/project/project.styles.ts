@@ -8,7 +8,6 @@ export const ProjectWrapper = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  position: reletive;
   cursor: pointer;
   align-self: center;
   justify-self: center;
@@ -24,6 +23,14 @@ export const StyledProject = styled.img`
   @media (max-width: 580px) {
     width: 300px;
   }
+`;
+export const MainWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  max-height: 450px;
+  width: auto;
 `;
 
 export const CoverWrapper = styled.div`
@@ -41,10 +48,14 @@ export const CoverWrapper = styled.div`
   @media (max-width: 580px) {
     height: 300px;
     width: 300px;
+    display: none;
   }
 `;
 
-export const Description = styled.a<DescriptionProps>`
+export const StyledLink = styled.a`
+  text-decoration: none;
+`;
+export const ContentWrapper = styled.div<DescriptionProps>`
   display: flex;
   flex-direction: column;
   justify-content: space-between;

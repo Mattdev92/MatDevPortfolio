@@ -20,6 +20,7 @@ import OrgenizerApp from 'assets/projects/OrganizerApp.png';
 import Portfolio from 'assets/projects/Portfolio.png';
 import ShopProject from 'assets/projects/ShopProject.png';
 import WeatherApp from 'assets/projects/WeatherApp.png';
+import Physiotherapist from 'assets/projects/fizjo.png';
 
 // Content Data for Main Page template
 export const developer = [
@@ -83,6 +84,7 @@ export const skillsCategories = [
   `'BACKEND LIBRARIES'>`,
   `'CMS & DATABASE & external platforms'>`,
   `'TOOLS'>`,
+  'CLOUD INFRASTRUCTURE',
 ];
 
 export const frontendEssentialsSkills = [
@@ -97,13 +99,14 @@ export const frontendEssentialsSkills = [
 export const backendsSkills = ['NODE JS', 'C++'];
 
 export const reactSkills = [
-  'React router',
+  'React Router',
   'React Redux',
   'React Hooks',
   'Jest & React testing library',
   'Redux',
   'Redux Toolkit',
   'Redux Thunk',
+  'MobX',
   'Styled Components',
   'React Bootstrap',
   'Material UI',
@@ -140,6 +143,13 @@ export const toolsSkills = [
   'VS Code',
   'Devtools',
   'AdobeXD',
+  'Figma',
+  'Slack',
+];
+export const cloudSkills = [
+  'Azure Devops',
+  'Azure Boards - Agile',
+  'Azure Pipelines',
 ];
 
 export const techIcons = [
@@ -159,12 +169,14 @@ export const skills = [
   backendFrameworks,
   platformsSkills,
   toolsSkills,
+  cloudSkills,
 ];
 
 // Projects Data
 
 export const ProjectMiniatures = [
   Portfolio,
+  Physiotherapist,
   nativeMems,
   OrgenizerApp,
   ShopProject,
@@ -175,6 +187,7 @@ export const ProjectMiniatures = [
 
 export const ProjectsUrl = [
   'https://github.com/Mattdev92/MatDevPortfolio',
+  'https://github.com/Mattdev92/PhysiotherapyPortfoliio',
   'https://github.com/Mattdev92/NativeMems',
   'https://github.com/Mattdev92/Fullstack_organizer_app',
   'https://github.com/Mattdev92/Shop-project',
@@ -183,17 +196,19 @@ export const ProjectsUrl = [
   'https://github.com/Mattdev92/Weather-app',
 ];
 export const ProjectTitles = [
-  'Developer Portfolio',
-  'Mem native App',
-  'Organizer',
-  'Ecommerce',
+  'My Frontend Portfolio',
+  'Physiotherapist webpage',
+  'Funny MEMs - native',
+  'Organizer Fullstack App',
+  'Ecommerce shop',
   'Memory Game',
-  'It SPA',
-  'Check city weather',
+  'SPA',
+  'Weather App',
 ];
 
 export const ProjectDescription = [
   'My Developer Portfolio presenting skills, projects and a little about me. Tech stack: React, Typescript, React Router, React hooks, Context, Styled Components',
+  'First commarcial Project created for proffessional Physiotherapist. Tech stack: React, Typescript, React Router, React hooks, Context, Styled Components',
   'Native app with funny Mems. Mems are downloaded form DatoCMS and present on mobile App. You can upvote or downvote each Mem to categorize them. Tech stack: React, React Native, Typescript, React Router, React hooks, Redux Toolkit, Styled Components, GraphQl, DatoCMS',
   'Fullstack organizer app to categorize your tasks. App is connected with Mongo database. You can create your own user and login any time to see what you have to do. Project is based on Express and React. Tech stack: React, Express, Typescript, React Router, React Bootstrap',
   'E-commerce website simulated real shop with all user funcionalities. You can add any of product to cart, change quantity and make an order. Tech stack: React with class components (without hooks), Redux, GSAP, React Router',

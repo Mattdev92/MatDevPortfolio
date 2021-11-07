@@ -3,7 +3,9 @@
 Hi ! It's my Portfolio created using React and TypeScript
 
 ## How it works
-![](devPortfolio.gif)
+live version: https://mateusz-grzejszczyk-frontend-developer.netlify.app/
+
+![](devPortfolio.png)
 
 ## Getting Started
 1. git clone 

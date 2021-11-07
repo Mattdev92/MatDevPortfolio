@@ -3,10 +3,12 @@ import {
   ProjectWrapper,
   StyledProject,
   CoverWrapper,
-  Description,
+  StyledLink,
+  ContentWrapper,
 } from './project.styles';
 import { ProjectProps } from './project.types';
 import Button from 'components/atoms/button/button';
+import { MainWrapper } from './project.styles';
 
 const Project: FC<ProjectProps> = ({
   refProject,
@@ -17,21 +19,35 @@ const Project: FC<ProjectProps> = ({
 }) => {
   const [showDescription, setShowDescription] = useState(false);
   return (
-    <ProjectWrapper
-      ref={refProject}
-      onMouseLeave={() => setShowDescription(false)}
-    >
-      <StyledProject src={image} />
-      <CoverWrapper
-        onMouseOver={() => setShowDescription(true)}
-        onClick={() => setShowDescription(true)}
-      />
-      <Description show={showDescription} href={link}>
-        <h2>{title}</h2>
-        {showDescription && content}
-        <Button content="GITHUB" />
-      </Description>
-    </ProjectWrapper>
+    <MainWrapper>
+      <h1>{title}</h1>
+      <ProjectWrapper
+        ref={refProject}
+        onClick={() => setShowDescription(!showDescription)}
+        onMouseLeave={() => {
+          if (window.innerWidth > 580) {
+            setShowDescription(false);
+          }
+        }}
+      >
+        <StyledProject src={image} />
+        <CoverWrapper
+          onMouseOver={() => {
+            if (window.innerWidth > 580) {
+              setShowDescription(true);
+            }
+          }}
+          onClick={() => setShowDescription(true)}
+        />
+        <ContentWrapper show={showDescription}>
+          <h2>{title}</h2>
+          {showDescription && content}
+          <StyledLink href={link}>
+            <Button content="GITHUB" />
+          </StyledLink>
+        </ContentWrapper>
+      </ProjectWrapper>
+    </MainWrapper>
   );
 };
 
