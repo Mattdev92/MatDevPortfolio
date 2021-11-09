@@ -19,12 +19,7 @@ const Project: FC<ProjectProps> = ({
 }) => {
   const [showDescription, setShowDescription] = useState(false);
   return (
-    <MainWrapper
-      onClick={(e) => {
-        e.stopPropagation();
-        setShowDescription(!showDescription);
-      }}
-    >
+    <MainWrapper>
       <h1>{title}</h1>
       <ProjectWrapper
         ref={refProject}
@@ -33,6 +28,10 @@ const Project: FC<ProjectProps> = ({
             e.stopPropagation();
             setShowDescription(false);
           }
+        }}
+        onClick={(e) => {
+          e.stopPropagation();
+          setShowDescription(!showDescription);
         }}
       >
         <StyledProject src={image} />
@@ -48,7 +47,7 @@ const Project: FC<ProjectProps> = ({
           <h2>{title}</h2>
           {showDescription && content}
           <StyledLink href={link}>
-            <Button content="GITHUB" />
+            {showDescription && <Button content="GITHUB" />}
           </StyledLink>
         </ContentWrapper>
       </ProjectWrapper>
