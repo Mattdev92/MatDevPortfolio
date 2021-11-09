@@ -19,13 +19,18 @@ const Project: FC<ProjectProps> = ({
 }) => {
   const [showDescription, setShowDescription] = useState(false);
   return (
-    <MainWrapper>
+    <MainWrapper
+      onClick={(e) => {
+        e.stopPropagation();
+        setShowDescription(!showDescription);
+      }}
+    >
       <h1>{title}</h1>
       <ProjectWrapper
         ref={refProject}
-        onClick={() => setShowDescription(!showDescription)}
-        onMouseLeave={() => {
+        onMouseLeave={(e) => {
           if (window.innerWidth > 580) {
+            e.stopPropagation();
             setShowDescription(false);
           }
         }}
