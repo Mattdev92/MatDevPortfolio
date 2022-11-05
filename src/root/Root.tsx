@@ -10,6 +10,12 @@ import ContactView from 'views/contactView/contactView';
 import CvView from 'views/cvView/cvView';
 import AppContext from 'context';
 import ProjectsView from 'views/projectsView/projectsView';
+import {
+  ProjectMiniatures,
+  ProjectsUrl,
+  ProjectDescription,
+  ProjectTitles,
+} from '../helpers/helpers';
 
 const Root: FC = () => {
   const [store, setStore] = useState({
@@ -47,7 +53,12 @@ const Root: FC = () => {
               <AboutView />
             </Route>
             <Route path="/projects">
-              <ProjectsView />
+              <ProjectsView
+                ProjectMiniatures={ProjectMiniatures}
+                ProjectsUrl={ProjectsUrl}
+                ProjectDescription={ProjectDescription}
+                ProjectTitles={ProjectTitles}
+              />
             </Route>
             <Route path="/skills">
               <SkillsView />
@@ -57,6 +68,14 @@ const Root: FC = () => {
             </Route>
             <Route path="/CV">
               <CvView />
+            </Route>
+            <Route path="/completed">
+              <ProjectsView
+                ProjectMiniatures={ProjectMiniatures}
+                ProjectsUrl={ProjectsUrl}
+                ProjectDescription={ProjectDescription}
+                ProjectTitles={ProjectTitles}
+              />
             </Route>
           </Switch>
         </Router>
