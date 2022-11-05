@@ -38,8 +38,22 @@ export const phoneNumber = [
 ];
 
 // Navigation data
-export const Navdata = ['O MNIE', 'PROJEKTY', 'UMIEJĘTNOŚCI', 'KONTAKT', 'CV'];
-export const Url = ['/about', '/projects', '/skills', '/contact', '/CV'];
+export const Navdata = [
+  'O MNIE',
+  'PROJEKTY WŁASNE',
+  'UMIEJĘTNOŚCI',
+  'KONTAKT',
+  'CV',
+  'REAZLIZACJE',
+];
+export const Url = [
+  '/about',
+  '/projects',
+  '/skills',
+  '/contact',
+  '/CV',
+  '/completed',
+];
 
 export const NavIcons = [
   AboutIcon,
@@ -47,6 +61,7 @@ export const NavIcons = [
   SkillIcon,
   ContactIcon,
   CVIcon,
+  ProjectIcon,
 ];
 // Social Network data
 export const SocialNetworkIcon = [Face, Github, Linkedin];

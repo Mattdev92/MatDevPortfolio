@@ -1,16 +1,20 @@
-import React, { FC, useRef, useEffect } from 'react';
+import React, { useRef, useEffect } from 'react';
 import { ContentWrapper } from './projectsContent.styles';
 import gsap from 'gsap';
 import { Power0 } from 'gsap/all';
 import Project from './project/project';
-import {
+
+const ProjectsContent = ({
   ProjectMiniatures,
   ProjectsUrl,
   ProjectDescription,
   ProjectTitles,
-} from 'helpers/helpers';
-
-const ProjectsContent: FC = () => {
+}: {
+  ProjectMiniatures: string[];
+  ProjectsUrl: string[];
+  ProjectDescription: string[];
+  ProjectTitles: string[];
+}) => {
   const refTab = useRef<React.RefObject<any>[]>(
     Array.from(ProjectMiniatures, () => React.createRef())
   );
@@ -27,7 +31,7 @@ const ProjectsContent: FC = () => {
       })
     );
     skillsTimeline.play();
-  }, [refTab]);
+  }, [refTab, ProjectMiniatures]);
 
   return (
     <ContentWrapper>
