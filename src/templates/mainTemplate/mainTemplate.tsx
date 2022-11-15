@@ -1,9 +1,8 @@
-import { FC } from 'react';
 import Nav from 'components/organisms/navigation/navigation';
 import { MainWrapper } from './mainTemplate.styles';
 import ContentSection from 'components/organisms/contentSection/contentSection';
 
-const MainTemplate: FC = ({ children }) => {
+const MainTemplate = ({ children }: { children: any }) => {
   return (
     <MainWrapper>
       <Nav />
