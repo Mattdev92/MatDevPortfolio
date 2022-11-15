@@ -11,6 +11,7 @@ import ContactView from 'views/contactView/contactView';
 import CvView from 'views/cvView/cvView';
 import AppContext from 'context';
 import ProjectsView from 'views/projectsView/projectsView';
+
 import {
   ProjectMiniatures,
   ProjectsUrl,
