@@ -1,5 +1,6 @@
 import { FC, useState, useEffect } from 'react';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { BrowserRouter as Router } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
 import { GlobalStyle } from 'assets/globalStyles/globalStyles';
 import { ThemeProvider } from 'styled-components';
 import { theme } from 'assets/globalStyles/theme';
@@ -10,6 +11,7 @@ import ContactView from 'views/contactView/contactView';
 import CvView from 'views/cvView/cvView';
 import AppContext from 'context';
 import ProjectsView from 'views/projectsView/projectsView';
+
 import {
   ProjectMiniatures,
   ProjectsUrl,
@@ -45,39 +47,35 @@ const Root: FC = () => {
       <ThemeProvider theme={theme}>
         <GlobalStyle />
         <Router>
-          <Switch>
-            <Route path="/" exact>
-              <MainView />
-            </Route>
-            <Route path="/about">
-              <AboutView />
-            </Route>
-            <Route path="/projects">
-              <ProjectsView
-                ProjectMiniatures={ProjectMiniatures}
-                ProjectsUrl={ProjectsUrl}
-                ProjectDescription={ProjectDescription}
-                ProjectTitles={ProjectTitles}
-              />
-            </Route>
-            <Route path="/skills">
-              <SkillsView />
-            </Route>
-            <Route path="/contact">
-              <ContactView />
-            </Route>
-            <Route path="/CV">
-              <CvView />
-            </Route>
-            <Route path="/completed">
-              <ProjectsView
-                ProjectMiniatures={ProjectMiniatures}
-                ProjectsUrl={ProjectsUrl}
-                ProjectDescription={ProjectDescription}
-                ProjectTitles={ProjectTitles}
-              />
-            </Route>
-          </Switch>
+          <Routes>
+            <Route path="/" element={<MainView />} />
+            <Route path="/about" element={<AboutView />} />
+            <Route
+              path="/projects"
+              element={
+                <ProjectsView
+                  ProjectMiniatures={ProjectMiniatures}
+                  ProjectsUrl={ProjectsUrl}
+                  ProjectDescription={ProjectDescription}
+                  ProjectTitles={ProjectTitles}
+                />
+              }
+            />
+            <Route path="/skills" element={<SkillsView />} />
+            <Route path="/contact" element={<ContactView />} />
+            <Route path="/CV" element={<CvView />} />
+            <Route
+              path="/completed"
+              element={
+                <ProjectsView
+                  ProjectMiniatures={ProjectMiniatures}
+                  ProjectsUrl={ProjectsUrl}
+                  ProjectDescription={ProjectDescription}
+                  ProjectTitles={ProjectTitles}
+                />
+              }
+            />
+          </Routes>
         </Router>
       </ThemeProvider>
     </AppContext.Provider>
