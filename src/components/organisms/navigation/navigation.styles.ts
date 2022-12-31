@@ -13,7 +13,6 @@ export const NavWrapper = styled.nav<NavigationWrapperProps>`
   grid-column: 1/3;
   grid-row: 1/4;
   width: auto;
-  border-right: 2px solid black;
   transition: width 1s ease-in;
   @media (max-width: 1440px) {
     justify-content: center;
