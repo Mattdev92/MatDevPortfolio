@@ -65,7 +65,7 @@ const MainPageTemplate: FC<MainPageTemplateProps> = ({
             }
             click={() => {
               if (item === 'Pobierz CV') {
-                window.open('resume/cv.pdf', '_black');
+                window.open('resume/cv1.pdf', '_black');
               }
             }}
           />

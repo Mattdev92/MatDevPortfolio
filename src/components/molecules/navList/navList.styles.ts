@@ -37,8 +37,8 @@ export const StyledLink = styled(NavLink)`
       left: 50%;
       transform: translateX(-50%);
       height: 30px;
-      width: 90%;
-      border-bottom: 2px solid black;
+      width: 50%;
+      border-bottom: 1px solid black;
     }
   }
   @media (max-width: 1440px) {
