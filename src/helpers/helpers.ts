@@ -44,7 +44,7 @@ export const Navdata = [
   'UMIEJĘTNOŚCI',
   'KONTAKT',
   'CV',
-  'REAZLIZACJE',
+  'REALIZACJE',
 ];
 export const Url = [
   '/about',
